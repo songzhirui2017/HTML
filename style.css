@@ -1,0 +1,574 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+* Author: Gq 
+* Version: 1.0
+* Last Changed by Gq
+* Last Update : 2014-02-09
+*/
+body{background-color:#EFEFEF;}
+#header,#content{margin:0 auto;width:1000px;}
+#header{height:88px;background-color:#FFF;}
+#header .logo{padding-top:10px;padding-left:20px;}
+#header .logo img{display:block;width:188px;height:65px;}
+#header .crumbs{padding-top:55px;padding-left:20px;line-height:22px;color:#646464;}
+#header .crumbs a{padding-right:4px;color:#646464;}
+#header .crumbs a:hover{text-decoration:underline;}
+#header .search{padding-top:34px;padding-right:20px;width:334px;height:40px;}
+#header .text{padding:5px;width:248px;height:28px;line-height:28px;font-size:14px;color:#646464;border:1px solid #71BFD9;}
+#header .submit{width:74px;height:40px;background-color:#71BFD9;font-size:14px;color:#FFF;border:none;cursor:pointer;}
+#header .submit:hover{background-color:#7AC773;}
+#header .collect{margin-top:44px;width:56px;}
+#header .collect a{position:relative;display:block;padding-right:20px;height:22px;line-height:22px;color:#71BFD9;cursor:pointer;}
+#header .collect a:hover{color:#7AC773;}
+#header .collect a i,
+.c_today .menu li em,
+.c_today .pic_action li i,
+.r_like i,
+.c_l_m_rg li i,
+.c_l_m_rg .c_l_m_en span.sound,
+.reading_rg ol li i,
+.j_r_bar p.j_r_like i,
+.sort_btn dd a i,
+.t_l_bd li a,
+.d_c_drop p i,
+.d_c_prev a,
+.d_c_next a,
+.to_top a,
+.operate li i,
+.c_today .pic_cont .en i.sound,
+.reading_txt ul .en span{background-image:url(http://cdn.iciba.com/web/news/new_dailysen/images/icon.png);background-repeat:no-repeat;}
+#header .collect a i{position:absolute;top:3px;left:-25px;width:20px;height:16px;background-position:-18px -72px;}
+#header .collect a:hover i{background-position:-39px -72px;}
+/* E header */
+/* S content */
+#content{position:relative;background-color:#E4E5E7;}
+#content .main{width:724px;min-height:1500px;_height:1500px;background-color:#FFF;}
+#content .mask{position:absolute;bottom:0;left:0;filter:alpha(opacity=80);opacity:0.8;}
+	/* S c_everyday */
+	.c_everyday{background-color:#E4E5E7;}
+	.c_today .menu{width:99px;}
+	.c_today .menu li{position:relative;float:left;width:99px;height:40px;line-height:38px;background:url(http://cdn.iciba.com/web/news/new_dailysen/images/double_border.png) repeat-x 0 100%;text-align:center;}
+	.c_today .menu li a{display:block;font-size:14px;color:#B5B5B5;}
+	.c_today .menu li a:hover,.c_today .menu li.cur a{background-color:#71BFD9;color:#000;}
+	.c_today .menu li em{position:absolute;top:50%;left:0;margin-top:-9px;width:8px;height:18px;background-position:-60px -72px;display:none;}
+	.c_today .pic{position:relative;}
+	.c_today .pic img{display:block;width:625px;height:385px;}
+	.c_today .pic .mask{width:100%;height:124px;background-color:#67BAD6;}
+	.c_today .pic_cont{position:absolute;bottom:0;left:0;padding:0 20px 24px;width:585px;height:100px;}
+	.c_today .pic_cont .en{padding-top:10px;height:40px;overflow:hidden;font:18px/20px Arial;word-wrap:break-word;}
+	.c_today .pic_cont .cn{padding-top:4px;line-height:18px;height:36px;overflow:hidden;}
+	.c_today .pic_cont .en a,.c_today .pic_cont .cn a{color:#FFF;}
+	.c_today .pic_cont .en a:hover,.c_today .pic_cont .cn a:hover{text-decoration:underline;}
+	.c_today .pic_cont .en i.sound,.c_l_m_rg .c_l_m_en span.sound,.reading_txt ul .en span.sound{*top:-4px;left:6px;display:inline-block;width:13px;height:16px;cursor:pointer;}
+	.c_today .pic_cont .en i.sound,.reading_txt ul .en span.sound{background-position:-72px -90px;}
+	.c_today .pic_cont .en i.sound:hover,.reading_txt ul .en span:hover{width:23px;background-position:-72px -107px;}
+	.c_today .pic_action{position:absolute;left:20px;bottom:6px;width:585px;height:18px;}
+	.c_today .pic_action ol,.c_today .pic_action li{float:left;}
+	.c_today .pic_action li a{display:block;position:relative;padding-left:18px;padding-right:16px;line-height:18px;color:#FFF;}
+	.c_today .pic_action li i{position:absolute;top:0;left:0;width:18px;height:18px;}
+	.c_today .pic_action li.p_scan i{background-position:0 -36px;}
+	.c_today .pic_action li.p_like i{background-position:-18px -36px;}
+	.c_today .pic_action li.p_collect i{background-position:-72px -36px;}
+	.c_today .pic_action li.p_review i{background-position:-54px -36px;}
+	.c_today .bdsharebuttonbox,.r_tag .bdsharebuttonbox,.p_b_rg .bdsharebuttonbox{height:18px;}
+	.c_today .bdsharebuttonbox a,.r_tag .bdsharebuttonbox a,.p_b_rg .bdsharebuttonbox a{float:left;margin:0 2px 0 0;padding:0;width:24px;height:18px;background-image:url(http://cdn.iciba.com/web/news/new_dailysen/images/share_1.png);background-repeat:no-repeat;}
+	.r_tag .bdsharebuttonbox a,.p_b_rg .bdsharebuttonbox a{background-image:url(http://cdn.iciba.com/web/news/new_dailysen/images/share_2.png);}
+	.c_today .bdsharebuttonbox a.bds_tsina,.r_tag .bdsharebuttonbox a.bds_tsina,.p_b_rg .bdsharebuttonbox a.bds_tsina{background-position:0 0;}
+	.c_today .bdsharebuttonbox a.bds_weixin,.r_tag .bdsharebuttonbox a.bds_weixin,.p_b_rg .bdsharebuttonbox a.bds_weixin{background-position:0 -18px;}
+	.c_today .bdsharebuttonbox a.bds_tqq,.r_tag .bdsharebuttonbox a.bds_tqq,.p_b_rg .bdsharebuttonbox a.bds_tqq{background-position:0 -36px;}
+	.c_today .bdsharebuttonbox a.bds_qzone,.r_tag .bdsharebuttonbox a.bds_qzone,.p_b_rg .bdsharebuttonbox a.bds_qzone{margin-right:5px;background-position:0 -54px;}
+	.c_today .bdsharebuttonbox a.bds_renren,.r_tag .bdsharebuttonbox a.bds_renren,.p_b_rg .bdsharebuttonbox a.bds_renren{background-position:0 -72px;}
+	.c_recent{position:relative;padding:16px 0;width:724px;height:106px;overflow:hidden;}
+	.c_recent ul{position:absolute;top:16px;left:0;width:736px;height:106px;}
+	.c_recent li{position:relative;float:left;margin-right:12px;width:172px;height:106px;}
+	.c_recent li img{display:block;width:172px;height:106px;}
+	.c_recent .mask{width:100%;height:26px;background-color:#67BAD6;}
+		.recent_date{position:absolute;left:0;bottom:0;width:100%;height:26px;}
+			.r_date{padding-left:10px;line-height:26px;font-size:14px;color:#FFF;}
+			.r_like{padding-left:16px;padding-right:10px;line-height:26px;color:#FFF;}
+			.r_like i{position:absolute;top:4px;left:0;width:18px;height:18px;background-position:-18px -36px;}
+	/* E c_everyday */
+	/* S hot_tag */
+	.hot_tag{padding:0 24px;}
+		.h_t_tab{height:44px;border-bottom:1px solid #E6E6E6;}
+		.h_t_tab dt,.h_t_tab dd{float:left;padding-top:4px;padding-right:20px;line-height:40px;font-size:14px;cursor:pointer;}
+		.h_t_tab dd{padding-left:20px;}
+		.h_t_tab dd a{color:#B5B5B5;}
+		.h_t_tab dt,.h_t_tab dd a:hover,.h_t_tab dd.cur a{color:#67BAD6;}
+		.h_t_cont{min-height:1332px;_height:1332px;}
+/* S cont_list_mod */
+.cont_list_mod{padding:24px 0;}
+	.c_l_m_lf{position:relative;width:280px;height:174px;}
+	.c_l_m_lf img{display:block;width:280px;height:174px;}
+	.c_l_m_lf .mask{width:56px;height:76px;background-color:#FFF;}
+		.c_l_m_date{position:absolute;left:0;bottom:0;width:56px;height:76px;color:#67BAD6;text-align:center;}
+			.c_l_m_day{padding-top:2px;font:34px/36px Arial;}
+			.c_l_m_month,.c_l_m_year{font:16px/18px Arial;}
+	.c_l_m_rg{width:376px;height:174px;overflow:hidden;}
+	.c_l_m_rg ol{padding-bottom:14px;height:18px;line-height:18px;}
+	.c_l_m_rg li{float:left;}
+	.c_l_m_rg li a{position:relative;display:block;padding-left:18px;padding-right:34px;color:#7AC773;}
+	.c_l_m_rg li i{position:absolute;top:0;left:0;width:18px;height:18px;}
+	.c_l_m_rg li.c_l_m_scan i{background-position:0 0;}
+	.c_l_m_rg li.c_l_m_like i{background-position:-18px 0;}
+	.c_l_m_rg li.c_l_m_collect i{background-position:-72px 0;}
+	.c_l_m_rg li.c_l_m_review i{background-position:-54px 0;}
+	
+	.c_l_m_rg li.c_l_m_scan a.cur,
+	.c_l_m_rg li.c_l_m_like a.cur,
+	.c_l_m_rg li.c_l_m_collect a.cur,
+	.c_l_m_rg li.c_l_m_review a.cur{color:#C7C7C7;}
+	.c_l_m_rg li.c_l_m_scan a.cur i{background-position:0 -18px;}
+	.c_l_m_rg li.c_l_m_like a.cur i{background-position:-18px -18px;}
+	.c_l_m_rg li.c_l_m_collect a.cur i{background-position:-72px -18px;}
+	.c_l_m_rg li.c_l_m_review a.cur i{background-position:-54px -18px;}
+	
+	.c_l_m_rg .c_l_m_en{font:19px/20px Arial;word-wrap:break-word;}
+	.c_l_m_rg .c_l_m_cn{padding-top:5px;line-height:18px;font-size:14px;}
+	.c_l_m_rg .c_l_m_en a,.c_l_m_rg .c_l_m_cn a{color:#323A47;}
+	.c_l_m_rg .c_l_m_en a:visited,.c_l_m_rg .c_l_m_cn a:visited{color:#67BAD6;}
+	.c_l_m_rg .c_l_m_en a:hover,.c_l_m_rg .c_l_m_cn a:hover{color:#67BAD6;text-decoration:underline;}
+	.c_l_m_rg .c_l_m_en span.sound{background-position:-86px -90px;}
+	.c_l_m_rg .c_l_m_en span:hover{width:23px;background-position:-96px -107px;}
+	.c_l_m_rg .c_l_m_editor{padding-top:14px;line-height:20px;color:#969696;}
+	.c_l_m_rg .c_l_m_en a span,.c_l_m_rg .c_l_m_cn a span,.c_l_m_rg .c_l_m_editor span{color:#67BAD6;}
+/* E cont_list_mod */
+	/* E hot_tag */
+	/* S related_article */
+	/*.rel_article{position:relative;margin:24px auto 0;width:676px;height:192px;overflow:hidden;}
+	.rel_article ol{position:absolute;top:0;left:0;padding-top:20px;width:688px;border-top:1px solid #E6E6E6;}
+	.rel_article li{float:left;padding-right:12px;width:160px;}
+	.rel_article li a{display:block;}
+	.rel_article li img{display:block;width:160px;height:106px;}
+	.rel_article li span{display:block;padding-top:4px;line-height:22px;color:#646464;text-align:center;}*/
+	/* E related_article */
+#content .aside{width:276px;}
+	.aside_mod{margin:0 auto;width:242px;}
+	.aside_mod .tt{height:38px;background:url(http://cdn.iciba.com/web/news/new_dailysen/images/double_border.png) repeat-x 0 100%;}
+	.aside_mod .tt h4{line-height:36px;font-size:18px;font-weight:normal;color:#313946;}
+	.aside_mod .cont{padding-top:10px;}
+	.news .cont{position:relative;height:240px;overflow:hidden;}
+	.news ul{position:absolute;bottom:0;left:0;width:242px;height:240px;}
+	.news li{position:relative;padding:10px 0;height:40px;}
+	.news li p.n_pic{position:absolute;top:10px;left:0;}
+	.news li p.n_pic img{display:block;width:40px;height:40px;}
+	.news li p.n_name{padding-left:50px;line-height:100%;padding-bottom:2px;}
+	.news li p.n_name a{color:#67BAD6;}
+	.news li p.n_txt{padding-left:50px;padding-bottom:2px;line-height:14px;color:#646464;}
+	.news li p.n_txt a{padding-left:5px;color:#646464;}
+	.news li p.n_txt a:hover{text-decoration:underline;}
+	/*.recommend dl{position:relative;padding:10px 0;height:90px;}
+	.recommend dt{position:absolute;top:10px;left:0;}
+	.recommend dt img{display:block;width:90px;height:90px;}
+	.recommend dd{padding-left:100px;line-height:18px;}
+	.recommend dd a{color:#646464;}*/
+	.zixuntuijian{padding-bottom:12px;overflow:hidden;}
+		.zixuntuijian_title{padding-bottom:4px;line-height:24px;font-size:14px;}
+		.zixuntuijian_title a{color:#646464;}
+		.zixuntuijian_img{float:left;}
+		.zixuntuijian_img img{display:block;width:90px;height:62px;}
+		.zixuntuijian_con{float:left;padding-left:10px;width:142px;height:62px;line-height:20px;overflow:hidden;}
+		.zixuntuijian_con a{color:#646464;}
+	.ad_pic{margin:0 auto;padding:10px 0;width:250px;height:250px;}
+	/*.forum ul{padding:5px 0;}
+	.forum li{height:22px;line-height:22px;}
+	.forum li a{position:relative;display:block;padding-left:20px;width:222px;color:#646464;}
+	.forum li a:hover{color:#67BAD6;text-decoration:underline;}
+	.forum li a i{position:absolute;top:9px;left:8px;width:4px;height:4px;background:url(http://cdn.iciba.com/web/news/new_dailysen/images/dot.png) no-repeat;}
+	.forum li a:hover i{background:url(http://cdn.iciba.com/web/news/new_dailysen/images/dot_hover.png) no-repeat;}*/
+	.learn p{padding:8px 0;text-align:center;}
+	.learn p a{color:#646464;vertical-align:middle;}
+	.learn p a.laba{margin-left:6px;display:inline-block;width:15px;height:13px;background:url(http://cdn.iciba.com/web/dayWord/images/sound.png) no-repeat;}
+	.learn p a.laba:hover{background-position:0 -16px;}
+	.interest form{padding:5px 0;}
+	.interest h6{height:24px;line-height:24px;font-size:14px;color:#646464;}
+	.interest p{padding-left:10px;padding-top:14px;height:26px;}
+	.interest p input{vertical-align:middle;}
+	.interest p label{padding-left:10px;vertical-align:middle;}
+	.interest p.btn{padding-left:0;padding-top:10px;height:36px;line-height:36px;text-align:center;}
+	.interest p.btn a{display:inline-block;width:88px;height:36px;font-size:14px;color:#FFF;background-color:#67BAD6;cursor:pointer;}
+	.interest p.btn a:hover{background-color:#7AC773;}
+	.kit .txt_link{padding:6px 0;}
+	.kit .txt_link p{line-height:20px;}
+	.kit .txt_link a{color:#67BAD6;}
+	.kit .txt_link a:hover{text-decoration:underline;}
+	.kit dl{color:#646464;}
+	.kit dt{padding-bottom:8px;line-height:22px;}
+	.kit dd{padding:5px 0;height:30px;line-height:30px;}
+	.kit dd span{float:left;width:104px;}
+	.kit dd a{float:left;padding-left:36px;width:64px;height:30px;background:#67BAD6 url(http://cdn.iciba.com/web/news/new_dailysen/images/join_qq.png) no-repeat 8px 50%;color:#FFF;}
+	.kit dd a:hover{background-color:#7AC773;}
+	.aside_tag .cont{padding-top:15px;}
+	.aside_tag .cont a{display:inline-block;margin:0 4px 8px 4px;padding:0 6px;height:20px;line-height:20px;color:#FFF;background-color:#67BAD6;}
+	.aside_tag .cont a:hover{background-color:#7AC773;}
+	.registration{margin:0 auto;width:242px;padding-bottom:10px;}
+	.dailyEday{background-color:#2A2F35;}
+		.daily_btn{padding-top:8px;line-height:30px;text-align:center;}
+		.daily_btn a{display:inline-block;width:100px;color:#FFF;font-size:14px;background-color:#67BAD6;}
+		.daily_btn a:hover{background-color:#7AC773;}
+/* S cont.html */
+.reading,.jc_recom{padding:0 20px;}
+.reading .r_hd{padding-top:15px;height:34px;}
+.reading .r_hd ul{float:left;height:34px;}
+.reading .r_hd li{float:left;padding-right:10px;}
+.reading .r_hd li span,.reading .r_hd li a{display:block;padding:0 12px;line-height:34px;color:#B5B5B5;}
+.reading .r_hd li span{color:#FFF;background-color:#67BAD6;}
+.reading .r_hd li a:hover,.reading .r_hd li a.cur{color:#67BAD6;}
+.reading .r_hd p{float:right;}
+.reading .r_hd p a{display:block;width:23px;height:34px;background:url(http://cdn.iciba.com/web/news/new_dailysen/images/cont_icon.png) no-repeat 0 -216px;}
+	/*.reading_lf{float:left;width:424px;height:260px;}
+	.reading_lf p.r_pic img{display:block;width:424px;height:260px;}
+	.reading_lf a.r_prev,.reading_lf a.r_next{position:absolute;top:50%;margin-top:-24px;width:32px;height:48px;}
+	.reading_lf a.r_prev i,.reading_lf a.r_next i{display:block;margin-top:6px;margin-left:6px;width:20px;height:36px;background-image:url(http://cdn.iciba.com/web/news/new_dailysen/images/reading.png);background-repeat:no-repeat;}
+	.reading_lf a.r_prev{left:0;}
+	.reading_lf a.r_next{right:0;}
+	.reading_lf a.r_prev i{background-position:0 0;}
+	.reading_lf a.r_next i{background-position:-20px 0;}
+	.reading_lf a.r_prev:hover{background-color:rgba(255,255,255,0.3);}
+	.reading_lf a.r_next:hover{background-color:rgba(255,255,255,0.3);}
+	.reading_lf a.r_prev:hover i{background-position:0 -36px;}
+	.reading_lf a.r_next:hover i{background-position:-20px -36px;}*/
+	.reading_lf{float:left;width:424px;height:260px;}
+	.reading_lf p.r_pic img{display:block;width:424px;height:260px;}
+	.reading_lf a.r_prev,.reading_lf a.r_next{position:absolute;top:50%;margin-top:-24px;width:32px;height:48px;display:none;}
+	.reading_lf a.r_prev i,.reading_lf a.r_next i{display:block;margin-top:6px;margin-left:6px;width:20px;height:36px;background-image:url(http://cdn.iciba.com/web/news/new_dailysen/images/reading.png);background-repeat:no-repeat;}
+	.reading_lf a.r_prev{left:0;background-color:#67bad6;}
+	.reading_lf a.r_next{right:0;background-color:#67bad6;}
+	.reading_lf a.r_prev i{background-position:0 0;}
+	.reading_lf a.r_next i{background-position:-20px 0;}
+	.reading_lf a.r_prev:hover i{background-position:0 -36px;}
+	.reading_lf a.r_next:hover i{background-position:-20px -36px;}
+	.reading_rg{padding:15px 15px 10px 10px;width:235px;background-color:#67BAD6;}
+		.reading_txt{position:relative;height:200px;overflow:hidden;}
+		.reading_txt ul{position:absolute;top:0;left:0;width:100%;}
+		.reading_txt ul .en a{font:16px/20px Arial;color:#FFF;}
+		.reading_txt ul .cn{padding-top:10px;}
+		.reading_txt ul .cn a{line-height:18px;color:#FFF;}
+		.reading_txt ul .editor{padding-top:16px;line-height:18px;color:#FFF;}
+		.scroll{position:absolute;top:15px;right:5px;width:5px;height:200px;display:none;}
+		.scroll span{position:absolute;top:0;left:0;width:100%;height:50px;background-color:#85C8DE;border-radius:2px;}
+	.reading_rg ol{padding-top:17px;height:18px;line-height:18px;}
+	.reading_rg ol li{float:right;padding-left:12px;}
+	.reading_rg ol li a{position:relative;display:block;padding-left:18px;color:#FFF;}
+	.reading_rg ol li i{position:absolute;top:0;left:0;width:18px;height:18px;}
+	.reading_rg ol li.reading_collect i{background-position:-72px -36px;}
+	.reading_rg ol li.reading_review i{background-position:-54px -36px;}
+	.reading_rg ol li.reading_like i{background-position:-18px -36px;}
+	.reading_rg ol li.reading_scan i{background-position:0 -36px;}
+.reading .r_audio{margin-bottom:16px;height:50px;background-color:#EFEFEF;}
+	.a_star a,.a_voice a,.a_review a{display:block;width:50px;height:50px;background-image:url(http://cdn.iciba.com/web/news/new_dailysen/images/cont_icon.png);background-repeat:no-repeat;}
+	.a_star a{background-position:0 0;}
+	.a_star a.a_paly{background-position:0 -50px;}
+	.a_voice a{background-position:0 -100px;}
+	.a_review a{background-position:0 -150px;;}
+.reading .r_audio a:hover{background-color:#E4E5E7;}
+	.a_bar{width:534px;}
+	.a_bar .bar{margin-left:18px;margin-top:20px;overflow:hidden;width:380px;height:10px;border-radius:4px;background-color:#E4E5E7;}
+	.a_bar .bar p{pasition:absolute;top:0;left:0;width:0;height:10px;background-color:#7AC773;}
+	.a_bar .time{padding:0 18px;height:50px;line-height:50px;color:#646464;}
+	.a_bar .sound{margin-top:16px;height:16px;}
+	.a_bar .sound dt{float:left;width:18px;height:16px;background:url(http://cdn.iciba.com/web/news/new_dailysen/images/cont_icon.png) no-repeat 0 -200px;cursor:pointer;}
+	.a_bar .sound dd{float:left;display:inlne;margin-right:2px;width:4px;height:16px;background-color:#E4E5E7;cursor:pointer;}
+	.a_bar .sound dd.cur{background-color:#4FBFE9;}
+.reading .r_tag{padding-top:20px;height:18px;}
+.reading .r_tag dl{flaot:left;line-height:18px;}
+.reading .r_tag dt{float:left;width:44px;}
+.reading .r_tag dd{float:left;display:inline;margin-right:8px;}
+.reading .r_tag dd a{display:block;padding:0 4px;line-height:18px;color:#FFF;background-color:#67BAD6;}
+.reading .r_tag dd a:hover{background-color:#7AC773;}
+	.j_r_tt{padding-top:10px;padding-bottom:5px;height:40px;}
+	.j_r_tt h4{line-height:40px;font-size:18px;font-weight:normal;color:#313946;}
+	.j_r_cont{position:relative;width:684px;height:102px;overflow:hidden;}
+	.j_r_cont ul{position:absolute;top:0;left:0;height:102px;width:692px;}
+	.j_r_cont li{position:relative;float:left;margin-right:8px;width:165px;height:102px;}
+	.j_r_cont li img{display:block;width:165px;height:102px;}
+	.j_r_cont li .mask{width:100%;height:26px;background-color:#67BAD6;}
+		.j_r_bar{position:absolute;left:0;bottom:0;width:100%;height:26px;}
+		.j_r_bar p.j_r_date{padding-left:10px;line-height:26px;color:#FFF;}
+		.j_r_bar p.j_r_like a{position:relative;display:block;padding-left:18px;padding-right:10px;line-height:26px;color:#FFF;cursor:pointer;}
+		.j_r_bar p.j_r_like i{position:absolute;top:4px;left:0;width:18px;height:18px;background-position:-18px -36px;}
+/* E cont.html */
+/* S search.html */
+.sort_btn{padding:14px 20px;height:22px;color:#646464;}
+.sort_btn p{float:left;line-height:22px;}
+.sort_btn p em{color:#67BAD6;}
+.sort_btn dl{float:right;}
+.sort_btn dt,.sort_btn dd{float:left;line-height:22px;}
+.sort_btn dd{padding-left:20px;}
+.sort_btn dd a{position:relative;display:block;padding-right:14px;color:#646464;cursor:pointer;}
+.sort_btn dd a:hover,.sort_btn dd.cur a{color:#67BAD6;}
+.sort_btn dd a i{position:absolute;top:6px;right:0;width:8px;height:11px;overflow:hidden;}
+.sort_btn dd a i.up{background-position:-108px -72px;}
+.sort_btn dd a:hover i.up,.sort_btn dd.cur a i.up{background-position:-117px -72px;}
+.sort_btn dd a i.down{background-position:0 -72px;}
+.sort_btn dd a:hover i.down,.sort_btn dd.cur a i.down{background-position:-9px -72px;}
+.sort_list{padding:0 20px;}
+.tagBox{padding-top:10px;height:20px;clear:left;}
+.tagBox dl{float:left;}
+.tagBox dt,.tagBox dd{float:left;line-height:20px;}
+.tagBox dd{padding-left:10px;}
+.tagBox dd a{display:block;padding:0 12px;color:#FFF;background-color:#67BAD6;cursor:pointer;}
+.tagBox dd a:hover{background-color:#7AC773;}
+.tagBox p{float:right;line-height:20px;color:#323A47;}
+.tagBox p a{margin-left:10px;color:#67BAD6;cursor:pointer;}
+/* E search.html */
+/* S tagHome */
+.tagHome{padding:0 14px;*padding-bottom:20px;}
+.tagHome li{position:relative;float:left;display:inline;margin:0 8px 20px;width:216px;background-color:#EFEFEF;}
+	.tag_img{margin:0 auto;padding-top:13px;width:198px;}
+	.tag_img p{float:left;display:inline;margin:0 4px;width:58px;height:36px;overflow:hidden;}
+	.tag_img p.t_i_first{margin-bottom:10px;width:190px;height:118px;}
+	.tag_img p img{display:block;width:100%;}
+	.tag_mask a{position:absolute;top:13px;left:13px;display:block;width:190px;height:164px;background-color:#000;filter:alpha(opacity=0);opacity:0;}
+	.tag_mask a:hover{filter:alpha(opacity=10);opacity:0.1;}
+	.tag_sort{padding:0 13px;height:40px;line-height:40px;color:#313946;}
+	.tag_sort span{padding-left:18px;}
+/* E tagHome */
+/* S pageNum */
+.pageNum{padding-top:20px;padding-bottom:20px;height:30px;line-height:30px;text-align:center;}
+.pageNum a,.pageNum span{display:inline-block;padding-left:12px;padding-right:12px;margin:0 2px;font-size:14px;color:#969696;cursor:pointer;}
+.pageNum a.p_prev,.pageNum a.p_next{padding-left:18px;padding-right:18px;color:#FFF;background-color:#67BAD6;}
+.pageNum a:hover,.pageNum span{color:#FFF;background-color:#7AC773;}
+/* E pageNum */
+/* S tagList */
+.tagList{padding:0 14px;}
+.tagList li{position:relative;float:left;display:inline;margin:0 8px 20px;width:216px;background-color:#313946;}
+	.t_l_hd{position:relative;height:140px;}
+	.t_l_hd img{display:block;width:216px;height:140px;}
+	.t_l_hd .mask{width:44px;height:60px;background-color:#FFF;}
+		.t_l_date{position:absolute;left:0;bottom:0;width:44px;height:60px;color:#67BAD6;text-align:center;}
+			.t_l_day{padding-top:2px;padding-bottom:2px;font-size:26px;font-weight:bold;}
+			.t_l_month,t_l_year{line-height:14px;font-size:12px;}
+	.t_l_bd{padding:16px 8px 0;}
+		.t_l_en,.t_l_cn{height:36px;line-height:140%;overflow:hidden;}
+		.t_l_en a{font-size:14px;color:#FFF;}
+		.t_l_cn{padding-top:4px;}
+		.t_l_cn a{color:#FFF;}
+		.t_l_en a:hover,.t_l_cn a:hover{text-decoration:underline;}
+	.t_l_bd ul{padding-top:18px;height:18px;}
+	.t_l_bd li{float:right;margin:0 0 0 10px;width:18px;height:18px;background:none;}
+	.t_l_bd li a{display:block;width:18px;height:18px;}
+	.t_l_bd li.t_l_sound a{background-position:-108px -36px;}
+	.t_l_bd li.t_l_challenge a{background-position:-90px -36px;}
+	.t_l_bd li.t_l_like a{background-position:-18px -36px;}
+	.t_l_bd li.t_l_collect a{background-position:-72px -36px;}
+	.t_l_bd li.t_l_comment a{background-position:-54px -36px;}
+	.t_l_bd dl{padding-top:14px;padding-bottom:8px;height:18px;}
+	.t_l_bd dt,.t_l_bd dd{float:left;line-height:18px;}
+	.t_l_bd dt{color:#FFF;}
+	.t_l_bd dd{padding:0 4px;}
+	.t_l_bd dd a{display:block;padding:0 5px;color:#FFF;background-color:#67BAD6;}
+	.t_l_bd dd a:hover{background-color:#7AC773;}
+/* E tagList */
+/* S dayCont */
+.day_cont{padding-bottom:50px;background-color:#FFF;}
+	.d_c_hd{z-index:2;height:80px;padding:0 20px;}
+	.d_c_hd h3{padding-top:10px;float:left;height:70px;line-height:70px;font-size:48px;color:#969696;}
+		.d_c_drop{display:inline;margin-top:42px;margin-left:22px;width:104px;height:28px;}
+		.d_c_drop p a{display:block;position:relative;padding-left:10px;width:94px;height:28px;line-height:28px;font-size:12px;color:#FFF;background-color:#7AC773;cursor:pointer;}
+		.d_c_drop p i{position:absolute;top:10px;right:6px;width:10px;height:9px;background-position:-68px -72px;}
+		.d_c_drop ul{position:absolute;top:28px;left:0;width:100%;display:none;}
+		.d_c_drop li{float:left;width:100%;height:22px;}
+		.d_c_drop li a{display:block;padding:0 10px;line-height:22px;background-color:#FFF;cursor:pointer;}
+		.d_c_drop li a:hover,.d_c_drop li.cur a{background-color:#EFEFEF;}
+		.d_c_date{padding-top:34px;line-height:40px;font-size:30px;color:#67BAD6;}
+		.d_c_week{margin:0 auto;width:960px;height:50px;background-color:#67BAD6;}
+		.d_c_week li{float:left;width:137px;}
+		.d_c_week li a{display:block;height:50px;line-height:50px;font-size:18px;font-weight:bold;color:#FFF;text-align:center;cursor:pointer;}
+		.d_c_prev,.d_c_next{top:16px;width:15px;height:18px;}
+		.d_c_prev a,.d_c_next a{display:block;width:15px;height:18px;cursor:pointer;}
+		.d_c_prev{left:30px;}
+		.d_c_next{right:30px;}
+		.d_c_prev a{background-position:-78px -72px;}
+		.d_c_next a{background-position:-94px -72px;}
+		/*.d_c_month{margin:0 auto;width:966px;height:480px;overflow:hidden;}
+		.d_c_month ol{position:absolute;top:0;left:0;height:480px;}
+		.d_c_month ol li{float:left;width:966px;height:480px;}*/
+		.d_c_month{margin:0 auto;width:966px;}
+		.d_c_month ul li{position:relative;float:left;display:inline;margin:10px 4px 0;width:130px;height:82px;background-color:#EFEFEF;overflow:hidden;cursor:pointer;}
+		.d_c_month ul li a,.d_c_month ul li img{display:block;width:130px;height:82px;}
+		.d_c_month ul li a{line-height:86px;font-size:14px;color:#7ac773;text-align:center;}
+		.d_c_month ul li span{position:absolute;left:0;bottom:0;width:30px;height:30px;line-height:30px;font-size:22px;color:#7AC773;background-color:#FFF;text-align:center;}
+/* E dayCont */
+.to_top{display:none;position:fixed;_position:absolute;left:50%;bottom:135px;margin-left:500px;width:38px;height:38px;}
+.to_top a{display:block;width:38px;height:38px;background-color:#7AC773;background-position:0 -90px;}
+/* S day_pop */
+.day_pop{padding:10px;width:260px;background-color:#FFF;box-shadow:0 0 5px #959595;}
+.day_pop img{display:block;width:260px;height:160px;}
+	.d_p_en{padding-top:6px;height:36px;font:13px/18px Arial;}
+	.d_p_cn{padding-top:4px;padding-bottom:10px;height:36px;line-height:18px;}
+	.d_p_en a,.d_p_cn a{color:#323a47;}
+	.d_p_en a:hover,.d_p_cn a:hover{text-decoration:underline;}
+	.operate{height:18px;line-height:18px;}
+	.operate li a{position:relative;display:block;padding-left:18px;padding-right:18px;color:#7ac773;}
+	.operate li i{position:absolute;top:0;left:0;width:18px;height:18px;}
+	.operate li.o_scan i{background-position:0 0;}
+	.operate li.o_like i{background-position:-18px 0;}
+	.operate li.o_collect i{background-position:-72px 0;}
+	.operate li.o_review i{background-position:-54px 0;}
+/* E day_pop */
+#Jihuajiyi{position:absolute;top:-88px;right:0;}
+/* S read.html */
+.review_box{padding:12px;height:456px;background-color:#67bad6;}
+.review_box p.r_b_mask{top:0;left:0;width:100%;height:480px;background-color:#000;filter:alpha(opacity=70);opacity:0.7;display:none;}
+.review_box p.r_b_num{padding-top:32px;padding-bottom:16px;line-height:22px;font-size:14px;color:#fff;}
+.review_box p.r_b_num i{font-style:normal;}
+	/* S review */
+	.review{height:336px;background-color:#fff;}
+	.review p.r_mask{top:0;left:0;width:100%;height:100%;background:#000;display:none;}
+	/* E review */
+	.sound_level{height:50px;color:#fff;}
+		.sound_clear{padding-top:24px;padding-left:54px;font-size:14px;}
+		.sound_clear dt{float:left;padding-right:20px;line-height:24px;}
+		.sound_clear dd{width:24px;height:24px;line-height:24px;text-align:center;}
+		.sound_clear dd.s_c_1{background-color:#019c58;}
+		.sound_clear dd.s_c_2{background-color:#99bf34;}
+		.sound_clear dd.s_c_3{background-color:#f9bc2e;}
+		.sound_clear dd.s_c_4{background-color:#f86c2f;}
+		.sound_exact{padding-top:23px;padding-left:120px;font-size:14px;}
+		.sound_exact dt{float:left;padding-right:20px;line-height:26px;}
+		.sound_exact dd,
+		.m_b_lf b.m_exact em,
+		.m_b_rg,
+		.m_b_rg a,
+		.p_rank dd em,
+		.p_en i,
+		.notice p.prev b,
+		.notice p.next b,
+		.notice li em.first,
+		.notice li em.second,
+		.notice li em.third{background-image:url(http://cdn.iciba.com/web/news/new_dailysen/images/btn.png);background-repeat:no-repeat;}
+		.sound_exact dd{display:inline;margin-right:6px;width:26px;height:26px;line-height:26px;text-align:center;}
+		.sound_exact dd.s_e_1{background-position:-76px -114px;}
+		.sound_exact dd.s_e_2{background-position:-102px -114px;}
+		.sound_exact dd.s_e_3{background-position:-128px -114px;}
+		.sound_exact dd.s_e_4{background-position:-154px -114px;}
+.mark_box{padding:36px 20px 0;min-height:1868px;_height:1868px;}
+.mark_box dt h4{padding-bottom:20px;line-height:28px;font-size:18px;color:#313946;}
+.mark_box dd{position:relative;padding:20px 0 50px 74px;height:60px;overflow:hidden;}
+.mark_box dd a.portrait,.mark_box dd a.portrait img{display:block;width:60px;height:60px;}
+.mark_box dd a.portrait{top:20px;left:0;}
+	.m_top{height:24px;}
+		.m_name{width:102px;line-height:24px;overflow:hidden;font-size:14px;}
+		.m_name a{color:#67bad6;}
+		.m_date{line-height:24px;color:#b5b5b5;}
+		.m_like{margin-right:50px;display:inline;width:116px;height:26px;}
+	.m_btm{padding-top:10px;height:26px;}
+		.m_b_lf{line-height:26px;font-size:14px;color:#67bad6;}
+		.m_b_lf b{font-weight:normal;color:#646464;}
+		.m_b_lf b.m_exact{padding-left:46px;}
+		.m_b_lf b em{margin-left:14px;display:inline-block;width:26px;height:26px;text-align:center;color:#fff;vertical-align:top;}
+		.m_b_lf b.m_clear em{margin-top:1px;width:24px;height:24px;line-height:24px;}
+		.m_b_lf b.m_clear em.m_a{background:#019c58;}
+		.m_b_lf b.m_clear em.m_b{background:#99bf34;}
+		.m_b_lf b.m_clear em.m_c{background:#f9bc2e;}
+		.m_b_lf b.m_clear em.m_d{background:#f86c2f;}
+		.m_b_lf b.m_exact em.m_1{background-position:-76px -114px;}
+		.m_b_lf b.m_exact em.m_2{background-position:-102px -114px;}
+		.m_b_lf b.m_exact em.m_3{background-position:-128px -114px;}
+		.m_b_lf b.m_exact em.m_4{background-position:-154px -114px;}
+		.m_b_rg{margin-right:50px;display:inline;width:116px;height:26px;background-color:#7ac773;background-position:0 -152px;}
+		.m_b_rg em{float:left;padding-left:10px;line-height:26px;color:#fff;}
+		.m_b_rg a{float:right;display:block;width:30px;height:26px;background-position:-116px -152px;}
+/* E read.html */
+/* S practice */
+.practice_box{padding:12px;height:612px;background-color:#67bad6;}
+	.p_daySent{padding:8px 20px 12px;color:#fff;}
+	.p_daySent dt{line-height:24px;font-size:14px;}
+	.p_daySent dd{height:28px;line-height:28px;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+	.practice{height:500px;background-color:#fff;color:#646464;}
+		.p_num{padding:54px 0 50px 46px;line-height:24px;font-size:14px;}
+		.p_rank{padding-left:46px;width:240px;}
+		.p_rank dt{line-height:34px;font-size:14px;border-bottom:1px solid #67bad6;}
+		.p_rank dd{padding:5px 0;height:60px;border-bottom:1px solid #67bad6;}
+		.p_rank dd em{float:left;margin:12px 12px 0 14px;width:44px;height:35px;text-indent:-9999px;}
+		.p_rank dd em.first{background-position:0 -255px;}
+		.p_rank dd em.second{background-position:-45px -255px;}
+		.p_rank dd em.third{background-position:-90px -255px;}
+		.p_rank dd img{float:left;width:60px;height:60px;}
+		.p_rank dd p{float:left;padding-left:16px;width:94px;}
+		.p_rank dd p a{padding-top:4px;display:block;line-height:24px;font-size:14px;}
+		.p_rank dd p b{display:block;font-weight:normal;line-height:22px;}
+		.p_rule{padding-right:42px;width:260px;}
+		.p_rule dt{line-height:34px;font-size:14px;}
+		.p_rule dd{line-height:24px;font-size:14px;}
+		.p_rule dd a{color:#67bad6;}
+		.p_rule dd.btn{padding-top:40px;line-height:54px;text-align:center;}
+		.p_rule dd.btn a{display:inline-block;width:130px;height:54px;font-size:18px;color:#fff;background-color:#7ac773;}
+		.p_rule dd.btn a:hover{background-color:#67bad6;}
+	.practice .prev,.practice .next{top:50%;margin-top:-24px;width:32px;height:48px;cursor:pointer;}
+	.practice .prev{left:0;}
+	.practice .next{right:0;}
+	.practice .prev b,.practice .next b{display:block;margin-top:6px;margin-left:6px;width:20px;height:36px;background-image:url(../images/reading.png);background-repeat:no-repeat;}
+	.practice .prev b{background-position:-40px 0;}
+	.practice .next b{background-position:-60px 0;}
+	.practice .prev:hover b{background-position:-40px -36px;}
+	.practice .next:hover b{background-position:-60px -36px;}
+		.p_cue{padding-top:15px;padding-left:30px;line-height:24px;font-size:14px;}
+		.p_en{padding:56px 48px 0;font-size:22px;line-height:34px;}
+		.p_en a{font-family:Arial;color:#646464;word-wrap:break-word;}
+		.p_en b{font-weight:normal;color:#7ac773;}
+		.p_en i{position:relative;*top:-4px;display:inline-block;margin-left:10px;width:25px;height:18px;background-position:-181px -114px;cursor:pointer;}
+		.p_en i:hover{background-position:-181px -133px;}
+		.p_countdown{padding-top:52px;line-height:140px;font-size:130px;font-family:Arial;color:#67bad6;text-align:center;}
+		.p_star{margin:62px auto 0;display:block;width:160px;height:40px;line-height:40px;text-align:center;font-size:14px;color:#fff;background-color:#7ac773;}
+		.p_star:hover{background-color:#67bad6;}
+		.p_top{margin:0 auto;width:620px;height:220px;border-bottom:1px solid #67BAD6;}
+			.p_time{padding-top:20px;padding-left:16px;height:24px;line-height:24px;}
+			.p_time b{float:left;padding-right:25px;font-size:14px;font-weight:normal;}
+			.p_time p{float:left;position:relative;margin-top:7px;width:464px;height:10px;overflow:hidden;background-color:#e4e5e7;border-radius:5px;}
+			.p_time p span{position:absolute;top:0;left:0;width:0;height:10px;background-color:#7ac773;}
+			.p_time i{float:left;padding-left:10px;font-style:normal;}
+			.p_word_down{padding:40px 30px 0;font:18px/30px Arial;}
+			.p_word_down a{display:inline-block;padding-left:3px;padding-right:3px;color:#646464;}
+			.p_word_down a:hover{padding-left:10px;padding-right:24px;color:#fff;background:#67bad6 url(http://cdn.iciba.com/web/news/new_dailysen/images/arrow.png) no-repeat right 0;}
+		.p_btm{margin:0 auto;width:620px;height:279px;}
+			.p_word_up{width:620px;height:249px;}
+			.p_word_up a{position:absolute;padding-left:10px;padding-right:10px;font:14px/30px Arial;color:#fff;background-color:#67bad6;}
+			.p_word_up a:hover{padding-right:24px;background:#7ac773 url(http://cdn.iciba.com/web/news/new_dailysen/images/arrow.png) no-repeat right -30px;}
+	.p_btn{padding-top:10px;height:30px;line-height:30px;text-align:center;}
+	.p_btn a{display:inline-block;margin:0 30px;width:110px;font-size:14px;color:#fff;background-color:#7ac773;}
+			.p_prize{padding:40px 40px 40px 50px;margin-top:9px;margin-left:20px;display:inline;width:284px;height:180px;font-size:14px;background:url(http://cdn.iciba.com/web/news/new_dailysen/images/p_prize.png) no-repeat;}
+			.p_prize i{padding:15px 0;display:block;line-height:26px;font-size:16px;font-style:normal;}
+			.p_prize b{font-size:30px;color:#7ac773;}
+			.p_prize em{font-size:36px;font-weight:bold;color:#7ac773;}
+			.p_b_rg{padding-left:30px;padding-top:140px;}
+				.p_share{line-height:22px;}
+				.p_proceed{margin-top:10px;width:160px;height:40px;}
+				.p_proceed a{display:block;width:160px;height:40px;line-height:40px;font-size:14px;color:#fff;text-align:center;background-color:#7ac773;}
+				.p_proceed a:hover{background-color:#67bad6;}
+.practice_box .tool_bar{padding-top:20px;}
+/* E practice */
+/* S notice */
+.notice{}
+.notice .cont{padding:44px 0;}
+.notice p.prev,.notice p.next{left:0;width:100%;}
+.notice p.prev{top:8px;}
+.notice p.next{bottom:8px;}
+.notice p.prev a,.notice p.next a{display:block;padding-top:12px;height:24px;background-color:#cacacc;}
+.notice p.prev a:hover,.notice p.next a:hover{background-color:#67bad6;}
+.notice p.prev b,.notice p.next b{display:block;margin:0 auto;width:19px;height:12px;}
+.notice p.prev b{background-position:-176px -152px;}
+.notice p.next b{background-position:-176px -165px;}
+.notice ol{min-height:560px;_height:560px;}
+.notice li{padding:8px 0;height:40px;}
+.notice li em{float:left;margin-top:7px;margin-right:10px;width:20px;height:25px;line-height:24px;text-align:center;color:#7ac773;}
+.notice li em.first{background-position:-152px -178px;text-indent:-9999px;}
+.notice li em.second{background-position:-173px -178px;text-indent:-9999px;}
+.notice li em.third{background-position:-194px -178px;text-indent:-9999px;}
+.notice li img{float:left;width:40px;height:40px;}
+.notice li a{float:left;padding-left:10px;padding-right:10px;width:100px;line-height:40px;color:#67bad6;}
+.notice li b{float:left;margin-top:10px;width:50px;height:20px;line-height:20px;font-weight:normal;text-align:center;color:#fff;background-color:#7ac773;}
+/* E notice */
+/* S tool_bar */
+.tool_bar{height:18px;line-height:18px;}
+.tool_bar li{float:left;padding-left:30px;}
+.tool_bar li a{position:relative;display:block;padding-left:18px;color:#fff;}
+.tool_bar li b{position:absolute;top:0;left:0;width:18px;height:18px;background-image:url(http://cdn.iciba.com/web/news/new_dailysen/images/icon.png);background-repeat:no-repeat;}
+.tool_bar li.t_scan b{background-position:0 -36px;}
+.tool_bar li.t_like b{background-position:-18px -36px;}
+.tool_bar li.t_collect b{background-position:-36px -36px;}
+.tool_bar li.t_review b{background-position:-54px -36px;}
+/* E tool_bar */
+/* E content */
